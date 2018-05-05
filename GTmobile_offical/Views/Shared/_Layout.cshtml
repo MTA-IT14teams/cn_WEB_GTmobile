@@ -1,0 +1,243 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.text | GTmobile_Điện thoại, tablet và các dịch vụ hỗ trợ</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/prettyPhoto.css" rel="stylesheet">
+    <link href="~/Content/price-range.css" rel="stylesheet">
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/main.css" rel="stylesheet">
+    <link href="~/Content/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href=""><i class="fa fa-phone"></i> +84 1688 966 276</a></li>
+                                <li><a href=""><i class="fa fa-envelope"></i> vanlahaokietxua@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                             <a href="@Url.Action("Index","Home")"><img src="images/home/logo.png" alt="Logo.png"  /></a>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href=""><i class="fa fa-user"></i> Tài Khoản</a></li>
+                                <li><a href=""><i class="fa fa-star"></i> Yêu Thích</a></li>
+                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                                <li><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i> Giỏ Hàng</a></li>
+                                <li><i class="fa fa-lock">@Html.ActionLink("Đăng Nhập", "Index", "Login")</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html">Điện Thoại</a></li>
+                                <li><a href="index.html">Tablet</a></li>
+                                <li><a href="index.html">Iphone</a></li>
+                                <li><a href="index.html">Xiaomi</a></li>
+                                <li><a href="index.html">Samsung</a></li>
+                                <li><a href="index.html">Phụ Kiện</a></li>
+                                <li><a href="index.html">Sửa Chữa</a></li>
+                                <li><a href="index.html">Khuyến Mại</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="search_box pull-right">
+                            <input type="text" placeholder="Search" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-bottom-->
+    </header><!--/header-->
+    <section>
+        @RenderBody()
+    </section>
+
+    <footer id="footer">
+        <!--Footer-->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="companyinfo">
+                            <h2><span>GT</span>-mobile</h2>
+                            <p>Ở đâu có điện thoại, ở đó có GT.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="col-sm-3">
+                            <div class="single-widget">
+                                <h2>Hỏi Đáp</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>Mua hàng online.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="single-widget">
+                                <h2>Đổi Trả Hàng</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>Dễ dàng lên đến 45 ngày.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="single-widget">
+                                <h2>Miễn Phí</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>Vận chuyển toàn quốc.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="address">
+                            <img src="images/home/map.png" alt="" />
+                            <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Dịch Vụ</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="">Trợ Giúp Online</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="">Tình Trạng Đơn Hàng.</a></li>
+                                <li><a href="">FAQ’s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Chính Sách</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="">Bảo Hành</a></li>
+                                <li><a href="">Đổi Trả</a></li>
+                                <li><a href="">Mua Hàng Online</a></li>
+                                <li><a href="">Phương Thức Thanh Toán</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Thông Tin</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="">Giới thiệu công ty</a></li>
+                                <li><a href="">Hệ thống cửa hàng</a></li>
+                                <li><a href="">Tuyển dụng</a></li>
+                                <li><a href="">Góp ý, khiếu nại</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="single-widget">
+                            <h2>About Shopper</h2>
+                            <form action="" method="post" class="searchform">
+                                <input type="text" placeholder="Địa chỉ e-mail" />
+                                <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                <p>Nhận những thông tin cập nhật sớm nhất <br />từ chúng tôi...</p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2018 GT-mobile Inc.</p>
+                    <p class="pull-right">thiết kế bởi <span>vn_l3h4ng</span></p>
+                </div>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>
